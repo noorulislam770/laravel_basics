@@ -50,7 +50,7 @@ return [
             'port' => env('RDS_PORT', '3306'),
             'database' => env('RDS_DB_DATABASE', 'laragigs'),
             'username' => env('RDS_USERNAME', 'root'),
-            'password' => env('RDS_PASSWORD', ''),
+            'password' => env('RDS_PASSWORD', 'Patengel1!'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
