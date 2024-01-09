@@ -86,6 +86,6 @@ Route::post('users/authenticate',[UserController::class,'authenticate']);
 
 Route::get('/run-migrations', function(){
     Artisan::call('optimize:clear');
-    Artisan::call('migrate:fresh --seed');
+    Artisan::call('migrate:refresh --seed');
     return "migrations done";
 });
