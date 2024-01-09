@@ -48,7 +48,7 @@ return [
 
             'host' => env('RDS_HOSTNAME', '127.0.0.1'),
             'port' => env('RDS_PORT', '3306'),
-            'database' => env('RDS_DB_DATABASE', 'laragigs'),
+            'database' => env('RDS_DB_DATABASE', 'awseb-e-nnmjg3v8c9-stack-awsebrdsdatabase-cdmmj8jortkl'),
             'username' => env('RDS_USERNAME', 'root'),
             'password' => env('RDS_PASSWORD', 'Patengel1!'),
             'unix_socket' => env('DB_SOCKET', ''),
