@@ -5,6 +5,8 @@ use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Listing;
+use Illuminate\Support\Facades\Artisan;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,3 +82,10 @@ Route::post('users/authenticate',[UserController::class,'authenticate']);
 // Route::get('/search',function(Request $request){
 //     return response($request->name . " " . $request->city);
 // });
+
+
+Route::get('/run-migrations', function(){
+    Artisan::call('optimize:clear');
+    Artisan::call('migrate:fresh --seed');
+    return "migrations done";
+});
